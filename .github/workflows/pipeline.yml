@@ -55,7 +55,7 @@ jobs:
       - name: Verify File Presence
         run: |
           echo "Checking file presence:"
-          ls -la k8s/nextjs-ci-cd/
+          ls -la infrastructure/k8s/nextjs-ci-cd/
           cat k8s/nextjs-ci-cd/deployment.yml
       
       - name: Update Deployment Manifest
