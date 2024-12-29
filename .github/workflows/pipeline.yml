@@ -52,6 +52,9 @@ jobs:
           token: ${{ secrets.INFRASTRUCTURE_TOKEN }}
           path: infrastructure
       
+      - name: List Infrastructure Directory
+        run: ls -la infrastructure
+
       - name: Verify File Presence
         run: |
           echo "Checking file presence:"
