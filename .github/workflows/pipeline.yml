@@ -50,13 +50,13 @@ jobs:
           repository: DarkMurky/nextjs-ci-cd-git-actions-infra
           ref: 'main'
           token: ${{ secrets.INFRASTRUCTURE_TOKEN }}
-          path: /
+          path: infrastructure
       
       - name: Verify File Presence
         run: |
           echo "Checking file presence:"
           ls -la infrastructure/k8s/nextjs-ci-cd/
-          cat k8s/nextjs-ci-cd/deployment.yml
+          cat infrastructure/k8s/nextjs-ci-cd/deployment.yml
       
       - name: Update Deployment Manifest
         run: |
