@@ -47,7 +47,7 @@ jobs:
       - name: Checkout Infra Repository
         uses: actions/checkout@v4
         with:
-          repository: DarkMurky/infrastructure
+          repository: DarkMurky/nextjs-ci-cd-git-actions-infra
           ref: 'main'
           token: ${{ secrets.INFRASTRUCTURE_TOKEN }}
           path: infrastructure
