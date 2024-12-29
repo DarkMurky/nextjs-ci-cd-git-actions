@@ -53,11 +53,8 @@ jobs:
           path: infrastructure
       
       - name: List Infrastructure Directory
-        run: ls -la infrastructure
+        run: find infrastructure
 
-      - name: List Contents of Infrastructure Directory
-        run: ls -la infrastructure/k8s
-      
       - name: Verify File Presence
         run: |
           echo "Checking file presence:"
